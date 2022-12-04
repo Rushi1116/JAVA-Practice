@@ -18,7 +18,4 @@ public class Solution {
         +" "+adder.add(10, 10));
     }
 }
-/* Expected output : 
-* My superclass is: Arithmetic
-* 42 13 20
-*/
+
