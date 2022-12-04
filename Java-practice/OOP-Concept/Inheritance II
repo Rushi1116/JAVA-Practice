@@ -1,0 +1,21 @@
+class Arithematic{
+    int add(int a, int b){
+        int sum = a + b;
+        return sum;
+    }
+}
+class Adder extends Arithematic{
+   
+}
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Adder adder = new Adder();
+        
+        System.out.println("My superclass is: Arithmetic\n"
+        +adder.add(12, 30)+" "+adder.add(10,3)
+        +" "+adder.add(10, 10));
+    }
+}
+
