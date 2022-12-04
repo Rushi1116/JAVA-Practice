@@ -1,0 +1,29 @@
+import java.util.Scanner;
+interface AdvancedArithmetic{
+    int divisor_sum(int n);
+}
+class MyCalculator implements AdvancedArithmetic {
+    public int divisor_sum(int n){
+       int result = 0;
+        for (int i = 1; i <= n; i++){
+            if (n % i == 0){
+                result += i;
+            }
+        }
+      
+        // Add 1 to the result as 1 is also
+        // a divisor
+        return result; 
+}
+    }
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        MyCalculator cal = new MyCalculator();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println("I implemented: AdvancedArithmetic\n"
+        +cal.divisor_sum(n));
+    }
+}
